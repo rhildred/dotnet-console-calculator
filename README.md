@@ -68,7 +68,8 @@ To test with coverage:  (in folder where .sln file is:)
 
 dotnet test --collect:"XPlat Code Coverage"
 
-Then to make a report:
+Then to make a report (Replacing the folder name for what was generated in the previous step): 
 
 dotnet tool install --global dotnet-reportgenerator-globaltool
->> ~/.dotnet/tools/reportgenerator -reports:.\Calculator.Tests\TestResults\c5836b98-69da-49ba-a7ed-501b6abb994e\coverage.cobertura.xml -targetdir:reports
+~/.dotnet/tools/reportgenerator -reports:.\Calculator.Tests\TestResults\c5836b98-69da-49ba-a7ed-501b6abb994e\coverage.cobertura.xml -targetdir:reports
+
